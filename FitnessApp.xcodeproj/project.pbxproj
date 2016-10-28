@@ -25,7 +25,7 @@
 		A83507EB1DC11D1500A847B9 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83507EA1DC11D1500A847B9 /* SettingsTableViewController.swift */; };
 		A845ED6A1DC3BAD10063919B /* ExerciseListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A845ED691DC3BAD10063919B /* ExerciseListTableViewController.swift */; };
 		A845ED6C1DC3BBEF0063919B /* CustomExerciseListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A845ED6B1DC3BBEF0063919B /* CustomExerciseListCell.swift */; };
-		A8581E841D8EB0E5006A0B67 /* workout.json in Resources */ = {isa = PBXBuildFile; fileRef = A8581E831D8EB0E5006A0B67 /* workout.json */; };
+		A845ED6E1DC3DE910063919B /* workout.json in Resources */ = {isa = PBXBuildFile; fileRef = A845ED6D1DC3DE910063919B /* workout.json */; };
 		A8581E871D90562B006A0B67 /* TableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8581E861D90562B006A0B67 /* TableViewHeader.swift */; };
 		A8581E891D905F1D006A0B67 /* ExercisesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8581E881D905F1D006A0B67 /* ExercisesCollectionViewController.swift */; };
 		A85ACBD71D8C5E9A0070984B /* NewWorkoutDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85ACBD61D8C5E9A0070984B /* NewWorkoutDayViewController.swift */; };
@@ -73,7 +73,7 @@
 		A83507EA1DC11D1500A847B9 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		A845ED691DC3BAD10063919B /* ExerciseListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseListTableViewController.swift; sourceTree = "<group>"; };
 		A845ED6B1DC3BBEF0063919B /* CustomExerciseListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomExerciseListCell.swift; sourceTree = "<group>"; };
-		A8581E831D8EB0E5006A0B67 /* workout.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = workout.json; path = ../../../../Downloads/workout.json; sourceTree = "<group>"; };
+		A845ED6D1DC3DE910063919B /* workout.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = workout.json; path = ../workout.json; sourceTree = "<group>"; };
 		A8581E861D90562B006A0B67 /* TableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHeader.swift; sourceTree = "<group>"; };
 		A8581E881D905F1D006A0B67 /* ExercisesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesCollectionViewController.swift; sourceTree = "<group>"; };
 		A85ACBD61D8C5E9A0070984B /* NewWorkoutDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewWorkoutDayViewController.swift; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 				A8E3332C1D820E5000651ADE /* Assets.xcassets */,
 				A83085E41D79E10500F44A7A /* Info.plist */,
 				A83085FB1D7E12E300F44A7A /* GoogleService-Info.plist */,
-				A8581E831D8EB0E5006A0B67 /* workout.json */,
+				A845ED6D1DC3DE910063919B /* workout.json */,
 				A8F85EB91D9599730001266F /* exercises.json */,
 				A83085F61D79E27000F44A7A /* Workout */,
 				A83507EC1DC12B5400A847B9 /* Exercise List */,
@@ -303,11 +303,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A845ED6E1DC3DE910063919B /* workout.json in Resources */,
 				A83085EB1D79E16A00F44A7A /* Main.storyboard in Resources */,
 				A8CA6F9E1D7FDA0500A82826 /* Oswald-Bold.ttf in Resources */,
 				A8E3332D1D820E5000651ADE /* Assets.xcassets in Resources */,
 				A8F85EBA1D9599730001266F /* exercises.json in Resources */,
-				A8581E841D8EB0E5006A0B67 /* workout.json in Resources */,
 				A83085FC1D7E12E300F44A7A /* GoogleService-Info.plist in Resources */,
 				A8CA6FA01D7FDA0500A82826 /* Oswald-Regular.ttf in Resources */,
 				A8CA6F9F1D7FDA0500A82826 /* Oswald-Light.ttf in Resources */,
