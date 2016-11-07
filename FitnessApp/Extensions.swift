@@ -42,9 +42,14 @@ extension UIColor {
     }
 }
 extension UIViewController {
-    func hideKeyboardWhenTapped() {
+    func hideKeyboardOnGesture() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.numberOfTapsRequired = 1
         view.addGestureRecognizer(tap)
+        
+        let swipe = UISwipeGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        swipe.direction = .down
+        view.addGestureRecognizer(swipe)
     }
     func dismissKeyboard() {
         view.endEditing(true)

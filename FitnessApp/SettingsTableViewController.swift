@@ -92,6 +92,20 @@ class SettingsTableViewController: UITableViewController {
         }
     }
     
+    @IBAction func unwindToSettings(segue: UIStoryboardSegue) {
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let tableSection = indexPath.section
+        let cellOfSection = indexPath.row
+        
+        if tableSection == 0 && cellOfSection == 0 {
+            performSegue(withIdentifier: "ShowProfile", sender: self)
+        }
+    }
+    
     // MARK: - Table view data source
 
     /*

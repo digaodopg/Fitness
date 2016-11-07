@@ -39,6 +39,11 @@
 		A8CA6FA51D7FE35700A82826 /* Oswald-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8CA6FA41D7FE35700A82826 /* Oswald-ExtraLight.ttf */; };
 		A8CA6FA71D7FE36200A82826 /* Oswald-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8CA6FA61D7FE36200A82826 /* Oswald-Medium.ttf */; };
 		A8CA6FA91D7FE43C00A82826 /* Oswald-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8CA6FA81D7FE43C00A82826 /* Oswald-Heavy.ttf */; };
+		A8D07AB21DCA541400B53CE2 /* ProfileSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D07AB11DCA541400B53CE2 /* ProfileSettingsTableViewController.swift */; };
+		A8D0D03C1DD10A380042B05D /* WelcomeOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D0D03B1DD10A380042B05D /* WelcomeOneViewController.swift */; };
+		A8D0D03F1DD10A610042B05D /* WelcomeTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D0D03E1DD10A610042B05D /* WelcomeTwoViewController.swift */; };
+		A8D0D0411DD10A730042B05D /* WelcomeThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D0D0401DD10A730042B05D /* WelcomeThreeViewController.swift */; };
+		A8D0D0431DD10BC80042B05D /* CustomizableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D0D0421DD10BC80042B05D /* CustomizableButton.swift */; };
 		A8E2341B1D829C9B006F739D /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E2341A1D829C9B006F739D /* ResetPasswordViewController.swift */; };
 		A8E3332D1D820E5000651ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E3332C1D820E5000651ADE /* Assets.xcassets */; };
 		A8F85EBA1D9599730001266F /* exercises.json in Resources */ = {isa = PBXBuildFile; fileRef = A8F85EB91D9599730001266F /* exercises.json */; };
@@ -87,6 +92,11 @@
 		A8CA6FA41D7FE35700A82826 /* Oswald-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-ExtraLight.ttf"; sourceTree = "<group>"; };
 		A8CA6FA61D7FE36200A82826 /* Oswald-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Medium.ttf"; sourceTree = "<group>"; };
 		A8CA6FA81D7FE43C00A82826 /* Oswald-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Heavy.ttf"; sourceTree = "<group>"; };
+		A8D07AB11DCA541400B53CE2 /* ProfileSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSettingsTableViewController.swift; sourceTree = "<group>"; };
+		A8D0D03B1DD10A380042B05D /* WelcomeOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeOneViewController.swift; sourceTree = "<group>"; };
+		A8D0D03E1DD10A610042B05D /* WelcomeTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeTwoViewController.swift; sourceTree = "<group>"; };
+		A8D0D0401DD10A730042B05D /* WelcomeThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeThreeViewController.swift; sourceTree = "<group>"; };
+		A8D0D0421DD10BC80042B05D /* CustomizableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizableButton.swift; sourceTree = "<group>"; };
 		A8E2341A1D829C9B006F739D /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		A8E3332C1D820E5000651ADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8F85EB91D9599730001266F /* exercises.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exercises.json; sourceTree = "<group>"; };
@@ -138,12 +148,14 @@
 				A82720DB1DB7EAED00152054 /* FitnessApp.entitlements */,
 				A8CA6FA11D7FDA0B00A82826 /* Resources */,
 				A83085D71D79DE8000F44A7A /* Helpers */,
+				A8D0D03D1DD10A400042B05D /* WelcomeView */,
 				A83085C31D79DDB700F44A7A /* AppDelegate.swift */,
 				A8581E861D90562B006A0B67 /* TableViewHeader.swift */,
 				A85ACBD81D8C66340070984B /* CustomCell.swift */,
 				A83085C51D79DDB700F44A7A /* ViewController.swift */,
 				A83507E81DC11C9F00A847B9 /* ProfileViewController.swift */,
 				A83507EA1DC11D1500A847B9 /* SettingsTableViewController.swift */,
+				A8D07AB11DCA541400B53CE2 /* ProfileSettingsTableViewController.swift */,
 				A8581E881D905F1D006A0B67 /* ExercisesCollectionViewController.swift */,
 				A870A6B71DAE9FCA006D20B1 /* ExerciseInfoViewController.swift */,
 				A870A6B91DAEA102006D20B1 /* CollectionViewCell.swift */,
@@ -170,6 +182,7 @@
 				A8F85EBB1D95B87A0001266F /* Exercises.swift */,
 				A83085D51D79DE6A00F44A7A /* Extensions.swift */,
 				A83507E61DC11BE800A847B9 /* CustomizableLabel.swift */,
+				A8D0D0421DD10BC80042B05D /* CustomizableButton.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -225,6 +238,16 @@
 				A8CA6FA81D7FE43C00A82826 /* Oswald-Heavy.ttf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		A8D0D03D1DD10A400042B05D /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				A8D0D03B1DD10A380042B05D /* WelcomeOneViewController.swift */,
+				A8D0D03E1DD10A610042B05D /* WelcomeTwoViewController.swift */,
+				A8D0D0401DD10A730042B05D /* WelcomeThreeViewController.swift */,
+			);
+			name = WelcomeView;
 			sourceTree = "<group>";
 		};
 		F6EA9A1663DF5AB905289368 /* Frameworks */ = {
@@ -378,9 +401,12 @@
 				A83085F81D79EA7C00F44A7A /* SignUpViewController.swift in Sources */,
 				A8F85EBC1D95B87A0001266F /* Exercises.swift in Sources */,
 				A83085F11D79E22600F44A7A /* PickerViewContainer.swift in Sources */,
+				A8D0D03F1DD10A610042B05D /* WelcomeTwoViewController.swift in Sources */,
 				A83085ED1D79E1F100F44A7A /* WorkoutViewController.swift in Sources */,
+				A8D0D0411DD10A730042B05D /* WelcomeThreeViewController.swift in Sources */,
 				A8E2341B1D829C9B006F739D /* ResetPasswordViewController.swift in Sources */,
 				A83085DC1D79DF7300F44A7A /* LogInViewController.swift in Sources */,
+				A8D0D03C1DD10A380042B05D /* WelcomeOneViewController.swift in Sources */,
 				A83085E11D79E03100F44A7A /* iCarousel.m in Sources */,
 				A83085C61D79DDB700F44A7A /* ViewController.swift in Sources */,
 				A83085D61D79DE6A00F44A7A /* Extensions.swift in Sources */,
@@ -392,8 +418,10 @@
 				A83085F31D79E23500F44A7A /* CustomPickerView.swift in Sources */,
 				A83085EF1D79E21300F44A7A /* CustomClockView.swift in Sources */,
 				A8581E871D90562B006A0B67 /* TableViewHeader.swift in Sources */,
+				A8D0D0431DD10BC80042B05D /* CustomizableButton.swift in Sources */,
 				A85ACBD91D8C66340070984B /* CustomCell.swift in Sources */,
 				A83507E91DC11C9F00A847B9 /* ProfileViewController.swift in Sources */,
+				A8D07AB21DCA541400B53CE2 /* ProfileSettingsTableViewController.swift in Sources */,
 				A845ED6A1DC3BAD10063919B /* ExerciseListTableViewController.swift in Sources */,
 				A870A6B81DAE9FCA006D20B1 /* ExerciseInfoViewController.swift in Sources */,
 				A83085C41D79DDB700F44A7A /* AppDelegate.swift in Sources */,

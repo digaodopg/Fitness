@@ -24,6 +24,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var logoImage: UIImageView!
     
     let vc = ViewController()
+    let wcv = WelcomeThreeViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +65,7 @@ class SignUpViewController: UIViewController {
         signUp.setTitleColor(secondaryColor(), for: UIControlState())
         signUp.addTarget(self, action: #selector(SignUpViewController.registrationAction(_:)), for: .touchUpInside)
         
-        self.hideKeyboardWhenTapped()
+        self.hideKeyboardOnGesture()
     }
     
     override func didReceiveMemoryWarning() {
@@ -131,7 +132,7 @@ class SignUpViewController: UIViewController {
             
             let ref = FIRDatabase.database().reference(fromURL: "https://fitnessapp-42f01.firebaseio.com/")
             let usersReference = ref.child("users").child(uid)
-            let values = ["firstname": name, "lastname": lastName, "email": email, "workout list": self.vc.workoutList] as [String : Any]
+            let values = ["firstname": name, "lastname": lastName, "email": email, "gender": "male", "height": "5.7", "weight": "180", "workout list": self.vc.workoutList] as [String : Any]
 
             usersReference.updateChildValues(values, withCompletionBlock: {
                 (err, ref) in

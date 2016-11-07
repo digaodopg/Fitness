@@ -46,7 +46,7 @@ class LogInViewController: UIViewController {
         login.setTitleColor(secondaryColor(), for: UIControlState())
         login.addTarget(self, action: #selector(LogInViewController.loginAction(_:)), for: .touchUpInside)
         
-        self.hideKeyboardWhenTapped()
+        self.hideKeyboardOnGesture()
     }
     
     override func didReceiveMemoryWarning() {
