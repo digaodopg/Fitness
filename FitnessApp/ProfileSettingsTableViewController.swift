@@ -18,6 +18,9 @@ class ProfileSettingsTableViewController: UITableViewController {
     @IBOutlet weak var userLastName: UITextField!
     @IBOutlet weak var userEmail: UITextField!
     @IBOutlet weak var userPassword: UITextField!
+    @IBOutlet weak var gender: UITextField!
+    @IBOutlet weak var height: UITextField!
+    @IBOutlet weak var weight: UITextField!
     
     var firstName = String()
     var lastName = String()
@@ -48,12 +51,17 @@ class ProfileSettingsTableViewController: UITableViewController {
                     self.lastName = (dictionary["lastname"] as? String)!
                     self.email = (dictionary["email"] as? String)!
                     
+                    
                     self.userFirstName.placeholder = self.firstName
                     //self.userFirstName.text = self.firstName
                     self.userLastName.placeholder = self.lastName
                     //self.userLastName.text = self.lastName
                     self.userEmail.placeholder = self.email
                     //self.userEmail.text = self.email
+                    
+                    self.gender.placeholder = (dictionary["gender"] as? String)!
+                    self.height.placeholder = (dictionary["height"] as? String)!
+                    self.weight.placeholder = (dictionary["weight"] as? String)!
                 }
                 
             }, withCancel: nil)
@@ -66,8 +74,8 @@ class ProfileSettingsTableViewController: UITableViewController {
     }
 
     @IBAction func saveChanges() {
-        
-        let uid = FIRAuth.auth()?.currentUser?.uid
+        let user = FIRAuth.auth()?.currentUser
+        let uid = user?.uid
         var ref = FIRDatabaseReference()
         ref = FIRDatabase.database().reference().child("users").child(uid!)
         
@@ -80,7 +88,6 @@ class ProfileSettingsTableViewController: UITableViewController {
             ref.updateChildValues(["lastname": userLastName.text!])
         }
         if userEmail.text != "" {
-            let user = FIRAuth.auth()?.currentUser
             
             if user != nil {
                 user?.updateEmail(userEmail.text!, completion: { (error) in
@@ -93,6 +100,29 @@ class ProfileSettingsTableViewController: UITableViewController {
                 })
             }
         }
+        if userPassword.text != "" {
+            if user != nil {
+                user?.updatePassword(userPassword.text!, completion: { (error) in
+                    if let error = error {
+                        print(error.localizedDescription)
+                    } else {
+                        print("password updated successfully")
+                    }
+                })
+            }
+        }
+        
+        if gender.text != "" {
+            ref.updateChildValues(["gender": gender.text!])
+        }
+        if height.text != "" {
+            ref.updateChildValues(["height": height.text!])
+        }
+        if weight.text != "" {
+            ref.updateChildValues(["weight": weight.text!])
+        }
+        
+        
         self.performSegue(withIdentifier: "UnwindSave", sender: self)
     }
     
